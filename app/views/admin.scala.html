@@ -1,0 +1,13 @@
+@main("Admin") {
+
+    <script type='text/javascript' src='@routes.Assets.at("js/index.js")'></script>
+
+    <ul id="users"></ul>
+
+    <form action="@controllers.routes.UserController.addUser()" method="post">
+        <input type="text" name="login" />
+        <input type="text" name="password" />
+        <button>Add user</button>
+    </form>
+
+}
